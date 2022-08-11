@@ -1,2 +1,6 @@
 # PowerTray
-[x] translation
+
+- [x] Translation
+
+![img](./assets/translation.png)
+
