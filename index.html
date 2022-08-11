@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Power Tray</title>
+  <link rel="stylesheet" href="./styles/style.css" media="screen" charset="utf-8">
+</head>
+<body>
+  <div class="container">
+    <div id="grid-container">
+      <!-- <div id="leftheader">hello</div> -->
+      <!-- <div id="midheader"> my</div> -->
+      <!-- <div id="rightheader"> name</div> -->
+      <textarea id="leftcontent" placeholder="Type, paste, cut text here..." rows="15"></textarea>
+      <textarea id="rightcontent" rows="15"></textarea>
+      <!-- <div id="footer">shuo</div> -->
+    </div>
+  </div>
+</body>
+
+<!-- Text area auto height -->
+<script>
+var textarea = document.querySelector('textarea');
+textarea.addEventListener('input', autosize);
+function autosize(){
+  var el = this;
+  setTimeout(function(){
+    el.style.cssText = 'height:auto; padding:0';
+    // for box-sizing other than "content-box" use:
+    // el.style.cssText = '-moz-box-sizing:content-box';
+    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+  },0);
+}
+</script>
+
+<script src="./scripts/script.js"></script>
+</html>
