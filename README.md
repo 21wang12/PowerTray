@@ -1,0 +1,2 @@
+# PowerTray
+[x] translation
